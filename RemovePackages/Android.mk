@@ -4,11 +4,11 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := AudioFX AmbientSensePrebuilt AppDirectedSMSService arcore
+LOCAL_OVERRIDES_PACKAGES := AmbientSensePrebuilt AppDirectedSMSService arcore
 LOCAL_OVERRIDES_PACKAGES += CarrierSetup Chrome Chrome-Stub ConnMO ConnMetrics
 LOCAL_OVERRIDES_PACKAGES += DCMO DevicePolicyPrebuilt DMService Drive 
 LOCAL_OVERRIDES_PACKAGES += GCS
-LOCAL_OVERRIDES_PACKAGES += MaestroPrebuilt Maps MusicFX MyVerizonServices NovaBugReportWrapper
+LOCAL_OVERRIDES_PACKAGES += MaestroPrebuilt Maps MyVerizonServices NovaBugReportWrapper
 LOCAL_OVERRIDES_PACKAGES += PixelLiveWallpaperPrebuilt PrebuiltGmail
 LOCAL_OVERRIDES_PACKAGES += RecorderPrebuilt
 LOCAL_OVERRIDES_PACKAGES += SafetyHubPrebuilt SCONE ScribePrebuilt Showcase SoundAmplifierPrebuilt SprintDM SprintHM
