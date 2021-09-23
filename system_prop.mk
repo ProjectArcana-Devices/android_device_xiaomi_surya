@@ -56,11 +56,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.perf.scroll_opt=true
-
-# Wave Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wave.maintainer_name=dlwlrma123 \
-    ro.wave.releasetype=Minkan
     
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
