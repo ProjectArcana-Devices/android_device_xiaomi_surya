@@ -84,6 +84,11 @@ on boot
   chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_min
   chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
   
+  # Prevents permission denied error for thermal sconfig
+  chmod 0660 /sys/class/thermal/thermal_message/sconfig
+  chown system system /sys/class/thermal/thermal_message/sconfig
+  write /sys/class/thermal/thermal_message/sconfig 10
+
 on property:sys.boot_completed=1
     # Enable UFS clock scaling back
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
@@ -156,9 +161,3 @@ on property:vendor.post_boot.parsed=1
     write /sys/block/sdd/queue/read_ahead_kb 128
     write /sys/block/sde/queue/read_ahead_kb 128
     write /sys/block/sdf/queue/read_ahead_kb 128
-    
-    # Prevents permission denied error for thermal sconfig
-    chmod 0644 /sys/class/thermal/thermal_message/sconfig
-    chown system system /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 10
-
