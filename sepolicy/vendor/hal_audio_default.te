@@ -1,8 +1,8 @@
+type audio_socket, file_type;
+dontaudit hal_audio_default sysfs:dir read;
+
+allow hal_audio_default audio_socket:sock_file rw_file_perms;
+
 # Dirac
-allow hal_audio_default self:capability { sys_nice };
-allow hal_audio_default audio_prop:file { open read getattr };
-allow hal_audio_default vendor_audio_prop:file { open read getattr };
-allow hal_audio_default sysfs:dir { open read };
-allow hal_audio_default socket_device:sock_file { write }; 
 get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
