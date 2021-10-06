@@ -16,7 +16,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    RemovePackages
+    Debloat
     
 # AAPT config
 PRODUCT_AAPT_CONFIG := normal
