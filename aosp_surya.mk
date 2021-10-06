@@ -17,9 +17,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_BLUR := true
-
-# GApps
-WITH_GAPPS := true
+ARCANE_OFFICIAL := true
+ARCANE_DEVICE := Surya
+ARCANE_MAINTAINER := dlwlrma123
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
