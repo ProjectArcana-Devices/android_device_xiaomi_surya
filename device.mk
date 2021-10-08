@@ -37,6 +37,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0
 
+# Camera
+PRODUCT_PACKAGES += \
+    libmedia_jni_shim
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
