@@ -32,12 +32,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.soundfx.dirac=true \
     hpx_send_params=1 \
-    persist.audio.dirac.speaker=true \
     persist.dirac.acs.controller=qem \
     persist.dirac.acs.storeSettings=1 \
-    ro.audio.soundfx.dirac=true \
+    persist.dirac.acs.no_usermsg=true \
     vendor.audio.safx.pbe.enabled=false \
-    persist.audio.dirac.music.state=1 \
     audio.dirac.logging=0 \
     persist.dirac.acs.ignore_error=1
     
