@@ -21,10 +21,34 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# first, inherit Project Arcana common.mk
+$(call inherit-product, vendor/aosp/common.mk)
 
-PRODUCT_NAME := lineage_surya
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Pixel Now playing feature
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Pixel charger animation
+USE_PIXEL_CHARGER_IMAGES := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Bloom and Living Universe Pixel Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# maintainer flag
+ARCANA_MAINTAINER := TheStrechh
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# prebuilt graphene
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+
+PRODUCT_NAME := aosp_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 NFC
