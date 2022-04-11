@@ -48,6 +48,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # prebuilt graphene
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
+# Official tag
+ARCANA_OFFICIAL := true
+
 PRODUCT_NAME := aosp_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
